@@ -48,12 +48,19 @@ def range(a, b=None, c=None):
             else:
                 yield i
                 i += 1
+        elif (b < a and c is None) or a == b:
+            break
         else:
-            if i >= b:
+            if b > a and i >= b:
+                break
+            elif b < a and i <= b:
                 break
             else:
-                yield i
                 if c is None:
+                    yield i
                     i += 1
                 else:
+                    if (b - a > 0 and c < 0) or (b - a < 0 and c > 0):
+                        break
+                    yield i
                     i += c
