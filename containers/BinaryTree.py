@@ -115,7 +115,7 @@ class BinaryTree():
         we can always print the returned results if we need to visualize them.
         But by returning the results we can also do more computations on the results if needed.
         Many of the test cases for more complicated tree functions rely on this to_list function,
-        so it is import to implement it correctly.
+        so it is important to implement it correctly.
 
         FIXME:
         Implement this function by modifying the _print functions above.
