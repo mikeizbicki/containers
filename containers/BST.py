@@ -79,14 +79,14 @@ class BST(BinaryTree):
         '''
         ret = True
         if node.left:
-            if (node.value >= node.left.value
-                    and node.value >= BST._find_largest(node.left)):
+            if (node.value >= node.left.value and
+                    node.value >= BST._find_largest(node.left)):
                 ret &= BST._is_bst_satisfied(node.left)
             else:
                 ret = False
         if node.right:
-            if (node.value <= node.right.value
-                    and node.value <= BST._find_smallest(node.right)):
+            if (node.value <= node.right.value and
+                    node.value <= BST._find_smallest(node.right)):
                 ret &= BST._is_bst_satisfied(node.right)
             else:
                 ret = False
