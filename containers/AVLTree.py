@@ -67,6 +67,7 @@ class AVLTree(BST):
         '''
         FIXME:
         Implement this function.
+
         The lecture videos provide a high-level overview of tree rotations,
         and the textbook provides full python code.
         The textbook's class hierarchy for their
@@ -89,6 +90,7 @@ class AVLTree(BST):
         '''
         FIXME:
         Implement this function.
+
         The lecture videos provide a high-level overview of tree rotations,
         and the textbook provides full python code.
         The textbook's class hierarchy for their AVL
@@ -172,4 +174,4 @@ class AVLTree(BST):
             else:
                 return AVLTree._right_rotate(node)
         else:
-            return node 
+            return node
