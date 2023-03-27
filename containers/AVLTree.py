@@ -172,4 +172,4 @@ class AVLTree(BST):
             else:
                 return AVLTree._right_rotate(node)
         else:
-            return 
+            return node 
