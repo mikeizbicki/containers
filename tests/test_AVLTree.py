@@ -217,7 +217,7 @@ def test__AVLTree_insert(xs):
         assert x in avl.to_list('inorder')
         assert avl.is_bst_satisfied()
         assert avl.is_avl_satisfied()
-    
+
 
 @given(xs=ints)
 def test__AVLTree_insert_list(xs):
@@ -226,7 +226,7 @@ def test__AVLTree_insert_list(xs):
     avl.insert_list(xs)
     assert avl.is_bst_satisfied()
     assert avl.is_avl_satisfied()
-    
+
 
 @given(xs=ints)
 def test__AVLTree___init__(xs):
@@ -236,8 +236,8 @@ def test__AVLTree___init__(xs):
     assert avl.is_avl_satisfied()
 
 
-# NOTE: 
-# We are NOT testing the following functions: 
+# NOTE:
+# We are NOT testing the following functions:
 #   __contains__
 #   find
 #   find_smallest
@@ -315,7 +315,7 @@ def test__AVLTree_inorder_property(xs):
     xs2 = copy.copy(xs)
     random.shuffle(xs2)
     bst2 = AVLTree(xs2)
-    
+
     assert bst1.to_list('inorder') == bst2.to_list('inorder')
 
 

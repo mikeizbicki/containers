@@ -338,5 +338,5 @@ def test__BST_eq(xs):
     xs2 = copy.copy(xs)
     random.shuffle(xs2)
     bst2 = BST(xs2)
-    
+
     assert bst1 == bst2
