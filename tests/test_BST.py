@@ -12,13 +12,13 @@ def test__BST_super():
 # (in this case the BST property)
 # and create test cases for whether that function works
 
-def test__BST_is_bst_satisified0():
+def test__BST_is_bst_satisfied0():
     bst = BST()
     bst.root = Node(0)
     bst.root.left = Node(1)
     assert not bst.is_bst_satisfied()
 
-def test__BST_is_bst_satisified1():
+def test__BST_is_bst_satisfied1():
     bst = BST()
     bst.root = Node(0)
     bst.root.left = Node(-2)
@@ -36,17 +36,17 @@ def test__BST_is_bst_satisfied2():
     bst.root.right = Node(-4)
     assert not bst.is_bst_satisfied()
 
-def test__BST_is_bst_satisified3():
+def test__BST_is_bst_satisfied3():
     bst = BST()
     assert bst.is_bst_satisfied()
 
-def test__BST_is_bst_satisified4():
+def test__BST_is_bst_satisfied4():
     bst = BST()
     bst.root = Node(0)
     bst.root.left = Node(-1)
     assert bst.is_bst_satisfied()
 
-def test__BST_is_bst_satisified5():
+def test__BST_is_bst_satisfied5():
     bst = BST()
     bst.root = Node(0)
     bst.root.left = Node(-2)
@@ -57,7 +57,7 @@ def test__BST_is_bst_satisified5():
     bst.root.right.right = Node(3)
     assert bst.is_bst_satisfied()
 
-def test__BST_is_bst_satisified6():
+def test__BST_is_bst_satisfied6():
     bst = BST()
     bst.root = Node(0)
     bst.root.left = Node(-2)
@@ -68,7 +68,7 @@ def test__BST_is_bst_satisified6():
     bst.root.right.right = Node(3)
     assert not bst.is_bst_satisfied()
 
-def test__BST_is_bst_satisified7():
+def test__BST_is_bst_satisfied7():
     bst = BST()
     bst.root = Node(0)
     bst.root.left = Node(-2)
