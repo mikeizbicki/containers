@@ -48,7 +48,7 @@ class BST(BinaryTree):
     def __iter__(self):
         for x in self.to_list('inorder'):
             yield x
-    
+
     def __eq__(self, t2):
         '''
         This method checks to see if the contents of self and t2 are equal.
